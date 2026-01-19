@@ -1,0 +1,12 @@
+--- RISULTATI ---
+datasets/BPIC15_1.xes
+Fitness (Token-based): {'perc_fit_traces': 100.0, 'average_trace_fitness': 1.0, 'log_fitness': 1.0, 'percentage_of_fitting_traces': 100.0}
+Precision (Token-based): 0.005514408325209774
+Precision (ETM): 0.005514408325209774
+Generalization: 0.6526451647517064
+Generalization k-fold 5: 0.9999697549925484
+Simplicity: 
+Arc Degree 0.3444537114261885,
+ Extende Cardoso 11,
+Cyclomatic 403
+--- FINE ---

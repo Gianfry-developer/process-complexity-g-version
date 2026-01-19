@@ -1,0 +1,47 @@
+Starting performing measurements datasets\BPIC 15\BPIC15_1.xes
+Selected measures: all
+Magnitude
+Magnitude: 52217
+Support
+Support: 1199
+Variety
+Variety: 398
+Level of detail
+Level of detail: 42.79316096747289
+Time Granularity
+Time granularity: 659.8765638031693 (seconds)
+Structure
+Structure: 0.9703353450670438
+Affinity
+Affinity: 0.0813577022985151
+Trace Lenght
+Trace length: 2/43.55045871559633/101 (min/avg/max)
+Distinct Traces
+Distinct traces: 97.581317764804%
+Deviation From Random
+Deviation from random: 0.9414076498591142
+Lempel Ziv
+Lempel-Ziv complexity: 13291
+Pentland's task complexity
+Pentland's Task complexity: 51554
+Pentland's process complexity
+Pentland's process complexity: 1e+308
+---Entropy measures---
+Variant entropy: 277222.21655450825
+Normalized variant entropy: 0.6528546738228733
+Sequence entropy: 346184.284991045
+Normalized equence entropy: 0.610294028540377
+Sequence entropy with linear forgetting: 153288.6345472401
+Normalized sequence entropy with linear forgetting: 0.27023508103410504
+Sequence entropy with exponential forgetting (k=1): 206432.884521951
+Normalized sequence entropy with exponential forgetting (k=1): 0.3639239624102834
+Time measurements:
+Defining predecessors: 9.999930625781417e-07 seconds
+Building prefix automaton: 3.2999960239976645e-06 seconds
+Drawing the graph: 4.1000021155923605e-06 seconds
+Calculating log complexity measures: 4.49999060947448e-06 seconds
+Calculating variant entropy: 4.999994416721165e-06 seconds
+Calculating sequence entropy: 5.199995939619839e-06 seconds
+Calculating sequence entropy with linear forgetting: 6.000002031214535e-06 seconds
+Calculating sequence entropy with exponential forgetting: 6.599992047995329e-06 seconds
+Total: 3.5699966247193515e-05

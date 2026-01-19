@@ -1,0 +1,76 @@
+Starting Complexity --->
+Reading and preparing event log datasets\BPIC 15\BPIC15_5.xes
+parsing log, completed traces ::   0%|          | 0/1156 [00:00<?, ?it/s]parsing log, completed traces ::   0%|          | 1/1156 [00:00<02:38,  7.29it/s]parsing log, completed traces ::   1%|          | 13/1156 [00:00<00:21, 54.38it/s]parsing log, completed traces ::   3%|▎         | 35/1156 [00:00<00:09, 116.84it/s]parsing log, completed traces ::   5%|▌         | 61/1156 [00:00<00:06, 163.88it/s]parsing log, completed traces ::   8%|▊         | 89/1156 [00:00<00:05, 200.75it/s]parsing log, completed traces ::  10%|▉         | 115/1156 [00:00<00:04, 217.43it/s]parsing log, completed traces ::  12%|█▏        | 144/1156 [00:00<00:04, 238.52it/s]parsing log, completed traces ::  15%|█▌        | 179/1156 [00:00<00:03, 271.43it/s]parsing log, completed traces ::  18%|█▊        | 213/1156 [00:00<00:03, 290.99it/s]parsing log, completed traces ::  21%|██        | 244/1156 [00:01<00:03, 296.69it/s]parsing log, completed traces ::  25%|██▍       | 286/1156 [00:01<00:02, 329.68it/s]parsing log, completed traces ::  28%|██▊       | 320/1156 [00:01<00:02, 322.87it/s]parsing log, completed traces ::  31%|███       | 353/1156 [00:01<00:02, 324.05it/s]parsing log, completed traces ::  33%|███▎      | 386/1156 [00:01<00:03, 255.91it/s]parsing log, completed traces ::  37%|███▋      | 432/1156 [00:01<00:02, 304.87it/s]parsing log, completed traces ::  40%|████      | 466/1156 [00:01<00:02, 299.73it/s]parsing log, completed traces ::  43%|████▎     | 499/1156 [00:01<00:02, 307.49it/s]parsing log, completed traces ::  46%|████▌     | 532/1156 [00:02<00:02, 305.95it/s]parsing log, completed traces ::  49%|████▉     | 566/1156 [00:02<00:01, 313.61it/s]parsing log, completed traces ::  52%|█████▏    | 601/1156 [00:02<00:01, 322.80it/s]parsing log, completed traces ::  55%|█████▌    | 637/1156 [00:02<00:01, 332.54it/s]parsing log, completed traces ::  58%|█████▊    | 671/1156 [00:02<00:01, 320.80it/s]parsing log, completed traces ::  61%|██████    | 704/1156 [00:02<00:01, 317.79it/s]parsing log, completed traces ::  64%|██████▍   | 737/1156 [00:02<00:01, 321.19it/s]parsing log, completed traces ::  67%|██████▋   | 770/1156 [00:02<00:01, 232.06it/s]parsing log, completed traces ::  69%|██████▉   | 798/1156 [00:02<00:01, 241.48it/s]parsing log, completed traces ::  71%|███████▏  | 825/1156 [00:03<00:01, 237.36it/s]parsing log, completed traces ::  74%|███████▎  | 851/1156 [00:03<00:01, 233.48it/s]parsing log, completed traces ::  76%|███████▌  | 876/1156 [00:03<00:01, 233.41it/s]parsing log, completed traces ::  78%|███████▊  | 901/1156 [00:03<00:01, 235.57it/s]parsing log, completed traces ::  80%|████████  | 929/1156 [00:03<00:00, 247.59it/s]parsing log, completed traces ::  83%|████████▎ | 955/1156 [00:03<00:00, 241.44it/s]parsing log, completed traces ::  85%|████████▍ | 980/1156 [00:03<00:00, 231.40it/s]parsing log, completed traces ::  87%|████████▋ | 1007/1156 [00:03<00:00, 240.69it/s]parsing log, completed traces ::  90%|████████▉ | 1038/1156 [00:03<00:00, 258.23it/s]parsing log, completed traces ::  92%|█████████▏| 1068/1156 [00:04<00:00, 266.26it/s]parsing log, completed traces ::  95%|█████████▍| 1095/1156 [00:04<00:00, 199.38it/s]parsing log, completed traces ::  97%|█████████▋| 1122/1156 [00:04<00:00, 214.83it/s]parsing log, completed traces :: 100%|█████████▉| 1151/1156 [00:04<00:00, 231.53it/s]parsing log, completed traces :: 100%|██████████| 1156/1156 [00:04<00:00, 255.32it/s]
+Starting performing measurements datasets\BPIC 15\BPIC15_5.xes
+Selected measures: all
+Magnitude
+Magnitude: 1156
+Support
+Support: 1156
+Variety
+Variety: 389
+Level of detail
+Level of detail: 49.990484429065745
+Time Granularity
+Traceback (most recent call last):
+  File "c:\Users\gianf\OneDrive\Documenti\Process Mining\Complexity\process-complexity\Complexity.py", line 1122, in <module>
+    measurements = perform_measurements(args.measures, log, pm4py_log, pa, quiet=False, verbose=args.verbose)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\gianf\OneDrive\Documenti\Process Mining\Complexity\process-complexity\Complexity.py", line 613, in perform_measurements
+    measurements['Time granularity'] = measure_time_granularity(log, quiet, verbose)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\gianf\OneDrive\Documenti\Process Mining\Complexity\process-complexity\Complexity.py", line 360, in measure_time_granularity
+    if event.predecessor:
+       ^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'predecessor'
+Reading and preparing event log datasets\BPIC 15\BPIC15_5.xes
+Starting performing measurements datasets\BPIC 15\BPIC15_5.xes
+Selected measures: all
+Magnitude
+Magnitude: 59083
+Support
+Support: 1156
+Variety
+Variety: 389
+Level of detail
+Level of detail: 49.990484429065745
+Time Granularity
+Time granularity: 0.007785467128027681 (seconds)
+Structure
+Structure: 0.9676713740987701
+Affinity
+Affinity: 0.08600847238014386
+Trace Lenght
+Trace length: 5/51.1098615916955/154 (min/avg/max)
+Distinct Traces
+Distinct traces: 99.74048442906575%
+Deviation From Random
+Deviation from random: 0.9451410725469729
+Lempel Ziv
+Lempel-Ziv complexity: 14987
+Pentland's task complexity
+Pentland's Task complexity: 58887
+Pentland's process complexity
+Pentland's process complexity: 1e+308
+---Entropy measures---
+Variant entropy: 303139.27564143244
+Normalized variant entropy: 0.648702019618582
+Sequence entropy: 391592.3098318371
+Normalized equence entropy: 0.6032598312788823
+Sequence entropy with linear forgetting: 222272.02665761573
+Normalized sequence entropy with linear forgetting: 0.34241679913752726
+Sequence entropy with exponential forgetting (k=1): 262626.80790333595
+Normalized sequence entropy with exponential forgetting (k=1): 0.4045845637089094
+Time measurements:
+Defining predecessors: 1.300009898841381e-06 seconds
+Building prefix automaton: 3.4999975468963385e-06 seconds
+Drawing the graph: 4.2000028770416975e-06 seconds
+Calculating log complexity measures: 4.6000059228390455e-06 seconds
+Calculating variant entropy: 4.9000082071870565e-06 seconds
+Calculating sequence entropy: 5.1000097300857306e-06 seconds
+Calculating sequence entropy with linear forgetting: 5.80001506023109e-06 seconds
+Calculating sequence entropy with exponential forgetting: 6.000016583129764e-06 seconds
+Total: 3.54000658262521e-05
+datasets\BPIC 16\BPI2016_Clicks_Logged_In.xes
+RAM libera sufficiente (65.12%). Procedo.
+Reading and preparing event log datasets\BPIC 16\BPI2016_Clicks_Logged_In.xes

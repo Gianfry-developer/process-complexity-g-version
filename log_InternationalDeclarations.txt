@@ -1,0 +1,50 @@
+Starting Complexity --->
+Reading and preparing event log C:\Users\gianf\OneDrive\Documenti\Process Mining\Complexity\process-complexity\datasets\BPIC 20\InternationalDeclarations.xes
+parsing log, completed traces ::   0%|          | 0/6449 [00:00<?, ?it/s]parsing log, completed traces ::   1%|          | 64/6449 [00:00<00:09, 639.94it/s]parsing log, completed traces ::   2%|1         | 128/6449 [00:00<00:23, 268.29it/s]parsing log, completed traces ::   3%|2         | 182/6449 [00:00<00:18, 336.44it/s]parsing log, completed traces ::   4%|3         | 231/6449 [00:00<00:16, 377.31it/s]parsing log, completed traces ::   4%|4         | 282/6449 [00:00<00:15, 410.16it/s]parsing log, completed traces ::   5%|5         | 344/6449 [00:00<00:13, 461.55it/s]parsing log, completed traces ::   6%|6         | 399/6449 [00:00<00:12, 485.28it/s]parsing log, completed traces ::   7%|7         | 457/6449 [00:01<00:11, 511.08it/s]parsing log, completed traces ::   8%|7         | 511/6449 [00:01<00:12, 468.35it/s]parsing log, completed traces ::   9%|8         | 561/6449 [00:01<00:12, 473.10it/s]parsing log, completed traces ::  10%|9         | 622/6449 [00:01<00:11, 502.84it/s]parsing log, completed traces ::  10%|#         | 674/6449 [00:01<00:11, 500.62it/s]parsing log, completed traces ::  11%|#1        | 733/6449 [00:01<00:10, 525.18it/s]parsing log, completed traces ::  12%|#2        | 796/6449 [00:01<00:10, 549.78it/s]parsing log, completed traces ::  13%|#3        | 852/6449 [00:01<00:10, 523.91it/s]parsing log, completed traces ::  14%|#4        | 906/6449 [00:01<00:10, 516.79it/s]parsing log, completed traces ::  15%|#4        | 959/6449 [00:02<00:10, 509.03it/s]parsing log, completed traces ::  16%|#5        | 1018/6449 [00:02<00:10, 528.93it/s]parsing log, completed traces ::  17%|#6        | 1072/6449 [00:02<00:10, 493.20it/s]parsing log, completed traces ::  17%|#7        | 1122/6449 [00:02<00:11, 459.65it/s]parsing log, completed traces ::  18%|#8        | 1173/6449 [00:02<00:11, 465.65it/s]parsing log, completed traces ::  19%|#8        | 1221/6449 [00:02<00:11, 468.89it/s]parsing log, completed traces ::  20%|#9        | 1273/6449 [00:02<00:10, 481.15it/s]parsing log, completed traces ::  20%|##        | 1322/6449 [00:02<00:10, 483.67it/s]parsing log, completed traces ::  21%|##1       | 1372/6449 [00:02<00:10, 488.38it/s]parsing log, completed traces ::  22%|##2       | 1424/6449 [00:03<00:10, 496.19it/s]parsing log, completed traces ::  23%|##2       | 1476/6449 [00:03<00:09, 501.72it/s]parsing log, completed traces ::  24%|##3       | 1527/6449 [00:03<00:17, 277.10it/s]parsing log, completed traces ::  24%|##4       | 1574/6449 [00:03<00:15, 311.92it/s]parsing log, completed traces ::  25%|##5       | 1625/6449 [00:03<00:13, 353.34it/s]parsing log, completed traces ::  26%|##5       | 1670/6449 [00:03<00:12, 374.84it/s]parsing log, completed traces ::  27%|##6       | 1718/6449 [00:03<00:11, 396.02it/s]parsing log, completed traces ::  29%|##9       | 1874/6449 [00:03<00:06, 694.24it/s]parsing log, completed traces ::  31%|###       | 1992/6449 [00:04<00:05, 818.43it/s]parsing log, completed traces ::  33%|###2      | 2118/6449 [00:04<00:04, 939.02it/s]parsing log, completed traces ::  35%|###4      | 2248/6449 [00:04<00:04, 1038.13it/s]parsing log, completed traces ::  37%|###7      | 2388/6449 [00:04<00:03, 1138.74it/s]parsing log, completed traces ::  39%|###8      | 2513/6449 [00:04<00:03, 1167.64it/s]parsing log, completed traces ::  41%|####1     | 2660/6449 [00:04<00:03, 1254.13it/s]parsing log, completed traces ::  43%|####3     | 2796/6449 [00:04<00:02, 1279.57it/s]parsing log, completed traces ::  45%|####5     | 2926/6449 [00:05<00:04, 771.22it/s] parsing log, completed traces ::  47%|####6     | 3029/6449 [00:05<00:04, 810.35it/s]parsing log, completed traces ::  49%|####8     | 3133/6449 [00:05<00:03, 858.24it/s]parsing log, completed traces ::  50%|#####     | 3236/6449 [00:05<00:03, 899.35it/s]parsing log, completed traces ::  53%|#####2    | 3386/6449 [00:05<00:02, 1047.08it/s]parsing log, completed traces ::  55%|#####4    | 3530/6449 [00:05<00:02, 1146.90it/s]parsing log, completed traces ::  57%|#####6    | 3654/6449 [00:05<00:02, 1164.38it/s]parsing log, completed traces ::  59%|#####8    | 3777/6449 [00:05<00:02, 1181.06it/s]parsing log, completed traces ::  60%|######    | 3900/6449 [00:05<00:02, 1184.88it/s]parsing log, completed traces ::  62%|######2   | 4027/6449 [00:05<00:02, 1205.92it/s]parsing log, completed traces ::  64%|######4   | 4150/6449 [00:06<00:01, 1175.32it/s]parsing log, completed traces ::  66%|######6   | 4270/6449 [00:06<00:01, 1157.37it/s]parsing log, completed traces ::  68%|######8   | 4387/6449 [00:06<00:02, 736.77it/s] parsing log, completed traces ::  70%|######9   | 4489/6449 [00:06<00:02, 794.29it/s]parsing log, completed traces ::  71%|#######1  | 4591/6449 [00:06<00:02, 844.59it/s]parsing log, completed traces ::  73%|#######2  | 4699/6449 [00:06<00:01, 900.03it/s]parsing log, completed traces ::  75%|#######4  | 4807/6449 [00:06<00:01, 944.16it/s]parsing log, completed traces ::  76%|#######6  | 4921/6449 [00:06<00:01, 996.90it/s]parsing log, completed traces ::  78%|#######7  | 5027/6449 [00:07<00:01, 1003.30it/s]parsing log, completed traces ::  80%|#######9  | 5132/6449 [00:07<00:01, 1012.08it/s]parsing log, completed traces ::  82%|########1 | 5256/6449 [00:07<00:01, 1071.21it/s]parsing log, completed traces ::  83%|########3 | 5373/6449 [00:07<00:00, 1099.76it/s]parsing log, completed traces ::  85%|########5 | 5494/6449 [00:07<00:00, 1128.66it/s]parsing log, completed traces ::  87%|########7 | 5625/6449 [00:07<00:00, 1180.13it/s]parsing log, completed traces ::  89%|########9 | 5767/6449 [00:07<00:00, 1249.04it/s]parsing log, completed traces ::  91%|#########1| 5893/6449 [00:07<00:00, 852.84it/s] parsing log, completed traces ::  93%|#########3| 6022/6449 [00:08<00:00, 950.70it/s]parsing log, completed traces ::  95%|#########5| 6144/6449 [00:08<00:00, 1015.91it/s]parsing log, completed traces ::  97%|#########7| 6268/6449 [00:08<00:00, 1072.10it/s]parsing log, completed traces ::  99%|#########9| 6388/6449 [00:08<00:00, 1106.41it/s]parsing log, completed traces :: 100%|##########| 6449/6449 [00:08<00:00, 768.30it/s] 
+Starting performing measurements C:\Users\gianf\OneDrive\Documenti\Process Mining\Complexity\process-complexity\datasets\BPIC 20\InternationalDeclarations.xes
+Selected measures: all
+Magnitude
+Magnitude: 72151
+Support
+Support: 6449
+Variety
+Variety: 34
+Level of detail
+Level of detail: 10.71670026360676
+Time Granularity
+Time granularity: 1747.0398511397116 (seconds)
+Structure
+Structure: 0.8304498269896194
+Affinity
+Affinity: 0.4060256070248276
+Trace Lenght
+Trace length: 3/11.187936114126222/27 (min/avg/max)
+Distinct Traces
+Distinct traces: 11.676228872693441%
+Deviation From Random
+Deviation from random: 0.7704736203347222
+Lempel Ziv
+Lempel-Ziv complexity: 13401
+Pentland's task complexity
+Pentland's Task complexity: 9582
+Pentland's process complexity
+Pentland's process complexity: 10964781961431.873
+---Entropy measures---
+Variant entropy: 30722.015079587778
+Normalized variant entropy: 0.7582679459948295
+Sequence entropy: 273919.65197793016
+Normalized equence entropy: 0.33937978632266513
+Sequence entropy with linear forgetting: 117522.63206254762
+Normalized sequence entropy with linear forgetting: 0.145607682652423
+Sequence entropy with exponential forgetting (k=1): 156379.84536668973
+Normalized sequence entropy with exponential forgetting (k=1): 0.19375082482214392
+Time measurements:
+Defining predecessors: 1.0999501682817936e-06 seconds
+Building prefix automaton: 3.1999661587178707e-06 seconds
+Drawing the graph: 4.099973011761904e-06 seconds
+Calculating log complexity measures: 4.699977580457926e-06 seconds
+Calculating variant entropy: 5.299982149153948e-06 seconds
+Calculating sequence entropy: 5.699985194951296e-06 seconds
+Calculating sequence entropy with linear forgetting: 6.89999433234334e-06 seconds
+Calculating sequence entropy with exponential forgetting: 7.499998901039362e-06 seconds
+Total: 3.849982749670744e-05

@@ -1,0 +1,12 @@
+--- RISULTATI ---
+datasets/BPI2016_Clicks_Logged_In.csv
+Fitness (Token-based): {'perc_fit_traces': 99.9966550709125, 'average_trace_fitness': 0.9999975682896476, 'log_fitness': 0.9999988482853157, 'percentage_of_fitting_traces': 99.9966550709125}
+Precision (Token-based): 0.2952914819578304
+Precision (ETM): 0.2952914819578304
+Generalization: 0.6680685028750741
+Generalization k-fold 5: 0.9999919348957613
+Simplicity: 
+Arc Degree 0.39746835443037976,
+ Extende Cardoso 31,
+Cyclomatic 138
+--- FINE ---

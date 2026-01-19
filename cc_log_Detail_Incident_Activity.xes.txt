@@ -1,0 +1,12 @@
+--- RISULTATI ---
+datasets\BPIC 14\Detail_Incident_Activity.xes
+Fitness (Token-based): {'perc_fit_traces': 100.0, 'average_trace_fitness': 1.0, 'log_fitness': 1.0, 'percentage_of_fitting_traces': 100.0}
+Precision (Token-based): 0.25407950878612084
+Precision (ETM): 0.25407950878612084
+Generalization: 0.9351276029341241
+Generalization k-fold 5: 1.0
+Simplicity: 
+Arc Degree 0.3870967741935484,
+ Extende Cardoso 5,
+Cyclomatic 43
+--- FINE ---

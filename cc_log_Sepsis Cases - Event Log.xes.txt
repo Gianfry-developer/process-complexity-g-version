@@ -1,0 +1,12 @@
+Starting CC --->
+datasets\Sepsis Cases - Event Log.xes
+parsing log, completed traces ::   0%|          | 0/1050 [00:00<?, ?it/s]parsing log, completed traces ::  26%|██▋       | 276/1050 [00:00<00:00, 2758.59it/s]parsing log, completed traces ::  57%|█████▋    | 596/1050 [00:00<00:00, 3009.23it/s]parsing log, completed traces ::  85%|████████▌ | 897/1050 [00:00<00:00, 2312.29it/s]parsing log, completed traces :: 100%|██████████| 1050/1050 [00:00<00:00, 2488.53it/s]
+Traceback (most recent call last):
+  File "c:\Users\gianf\OneDrive\Documenti\Process Mining\Complexity\process-complexity\CC.py", line 137, in <module>
+    main(args.file)
+  File "c:\Users\gianf\OneDrive\Documenti\Process Mining\Complexity\process-complexity\CC.py", line 108, in main
+    log = carica_log(path_file)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\gianf\OneDrive\Documenti\Process Mining\Complexity\process-complexity\CC.py", line 30, in carica_log
+    from pm4py.objects.log import EventLog as Converter
+ImportError: cannot import name 'EventLog' from 'pm4py.objects.log' (c:\Users\gianf\miniconda3\envs\complexity\Lib\site-packages\pm4py\objects\log\__init__.py)

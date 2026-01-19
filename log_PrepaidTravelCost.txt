@@ -1,0 +1,50 @@
+Starting Complexity --->
+Reading and preparing event log C:\Users\gianf\OneDrive\Documenti\Process Mining\Complexity\process-complexity\datasets\BPIC 20\PrepaidTravelCost.xes
+parsing log, completed traces ::   0%|          | 0/2099 [00:00<?, ?it/s]parsing log, completed traces ::   3%|3         | 68/2099 [00:00<00:03, 666.64it/s]parsing log, completed traces ::   6%|6         | 135/2099 [00:00<00:06, 298.49it/s]parsing log, completed traces ::   9%|9         | 189/2099 [00:00<00:05, 355.75it/s]parsing log, completed traces ::  14%|#3        | 291/2099 [00:00<00:03, 536.70it/s]parsing log, completed traces ::  18%|#7        | 375/2099 [00:00<00:02, 617.61it/s]parsing log, completed traces ::  21%|##1       | 448/2099 [00:00<00:02, 612.96it/s]parsing log, completed traces ::  25%|##4       | 517/2099 [00:00<00:02, 570.94it/s]parsing log, completed traces ::  28%|##8       | 591/2099 [00:01<00:02, 613.79it/s]parsing log, completed traces ::  37%|###6      | 775/2099 [00:01<00:01, 946.72it/s]parsing log, completed traces ::  46%|####5     | 957/2099 [00:01<00:00, 1187.92it/s]parsing log, completed traces ::  53%|#####3    | 1121/2099 [00:01<00:00, 1316.81it/s]parsing log, completed traces ::  61%|######1   | 1285/2099 [00:01<00:00, 1406.32it/s]parsing log, completed traces ::  70%|######9   | 1468/2099 [00:01<00:00, 1518.75it/s]parsing log, completed traces ::  77%|#######7  | 1624/2099 [00:01<00:00, 1131.51it/s]parsing log, completed traces ::  85%|########5 | 1792/2099 [00:01<00:00, 1261.03it/s]parsing log, completed traces ::  94%|#########3| 1964/2099 [00:02<00:00, 1373.34it/s]parsing log, completed traces :: 100%|##########| 2099/2099 [00:02<00:00, 1003.72it/s]
+Starting performing measurements C:\Users\gianf\OneDrive\Documenti\Process Mining\Complexity\process-complexity\datasets\BPIC 20\PrepaidTravelCost.xes
+Selected measures: all
+Magnitude
+Magnitude: 18246
+Support
+Support: 2099
+Variety
+Variety: 29
+Level of detail
+Level of detail: 8.48642210576465
+Time Granularity
+Time granularity: 235.99856596558317 (seconds)
+Structure
+Structure: 0.8061831153388823
+Affinity
+Affinity: 0.3947594851994425
+Trace Lenght
+Trace length: 1/8.692710814673655/21 (min/avg/max)
+Distinct Traces
+Distinct traces: 9.623630300142926%
+Deviation From Random
+Deviation from random: 0.7401731598375361
+Lempel Ziv
+Lempel-Ziv complexity: 3932
+Pentland's task complexity
+Pentland's Task complexity: 1937
+Pentland's process complexity
+Pentland's process complexity: 63095734448.019424
+---Entropy measures---
+Variant entropy: 5488.7741299112095
+Normalized variant entropy: 0.7237852824924965
+Sequence entropy: 56758.57179152273
+Normalized equence entropy: 0.3170439544275999
+Sequence entropy with linear forgetting: 33099.87933248095
+Normalized sequence entropy with linear forgetting: 0.18489042806065664
+Sequence entropy with exponential forgetting (k=1): 38381.78368584408
+Normalized sequence entropy with exponential forgetting (k=1): 0.21439426845413026
+Time measurements:
+Defining predecessors: 1.500011421740055e-06 seconds
+Building prefix automaton: 3.900029696524143e-06 seconds
+Drawing the graph: 4.600035026669502e-06 seconds
+Calculating log complexity measures: 5.200039595365524e-06 seconds
+Calculating variant entropy: 5.600042641162872e-06 seconds
+Calculating sequence entropy: 6.100046448409557e-06 seconds
+Calculating sequence entropy with linear forgetting: 7.299997378140688e-06 seconds
+Calculating sequence entropy with exponential forgetting: 7.90000194683671e-06 seconds
+Total: 4.210020415484905e-05

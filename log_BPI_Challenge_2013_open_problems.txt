@@ -1,0 +1,50 @@
+Starting Complexity --->
+Reading and preparing event log C:\Users\gianf\OneDrive\Documenti\Process Mining\Complexity\process-complexity\datasets\BPIC 13\BPI_Challenge_2013_open_problems.xes
+parsing log, completed traces ::   0%|          | 0/819 [00:00<?, ?it/s]parsing log, completed traces ::  22%|##2       | 184/819 [00:00<00:00, 1830.43it/s]parsing log, completed traces ::  54%|#####4    | 444/819 [00:00<00:00, 2282.10it/s]parsing log, completed traces :: 100%|##########| 819/819 [00:00<00:00, 2809.40it/s]
+Starting performing measurements C:\Users\gianf\OneDrive\Documenti\Process Mining\Complexity\process-complexity\datasets\BPIC 13\BPI_Challenge_2013_open_problems.xes
+Selected measures: all
+Magnitude
+Magnitude: 2351
+Support
+Support: 819
+Variety
+Variety: 3
+Level of detail
+Level of detail: 1.7142857142857142
+Time Granularity
+Time granularity: 1771652.7888386124 (seconds)
+Structure
+Structure: 0.33333333333333337
+Affinity
+Affinity: 0.2519670359523649
+Trace Lenght
+Trace length: 1/2.8705738705738706/22 (min/avg/max)
+Distinct Traces
+Distinct traces: 13.186813186813188%
+Deviation From Random
+Deviation from random: 0.6256406170196886
+Lempel Ziv
+Lempel-Ziv complexity: 377
+Pentland's task complexity
+Pentland's Task complexity: 489
+Pentland's process complexity
+Pentland's process complexity: 2.0892961308540396
+---Entropy measures---
+Variant entropy: 920.0861123335303
+Normalized variant entropy: 0.7029596109025903
+Sequence entropy: 5051.025613828667
+Normalized equence entropy: 0.2767705997572258
+Sequence entropy with linear forgetting: 4783.141416995346
+Normalized sequence entropy with linear forgetting: 0.26209190368804447
+Sequence entropy with exponential forgetting (k=1): 4800.2049089867605
+Normalized sequence entropy with exponential forgetting (k=1): 0.2630268965535502
+Time measurements:
+Defining predecessors: 1.300009898841381e-06 seconds
+Building prefix automaton: 2.900022082030773e-06 seconds
+Drawing the graph: 3.600027412176132e-06 seconds
+Calculating log complexity measures: 4.100031219422817e-06 seconds
+Calculating variant entropy: 4.600035026669502e-06 seconds
+Calculating sequence entropy: 5.100038833916187e-06 seconds
+Calculating sequence entropy with linear forgetting: 6.100046448409557e-06 seconds
+Calculating sequence entropy with exponential forgetting: 6.700051017105579e-06 seconds
+Total: 3.440026193857193e-05

@@ -1,0 +1,12 @@
+Starting CC --->
+datasets\BPIC 20\RequestForPayment.xes
+parsing log, completed traces ::   0%|          | 0/6886 [00:00<?, ?it/s]parsing log, completed traces ::  13%|█▎        | 927/6886 [00:00<00:00, 9234.52it/s]parsing log, completed traces ::  28%|██▊       | 1962/6886 [00:00<00:00, 9103.62it/s]parsing log, completed traces ::  42%|████▏     | 2874/6886 [00:00<00:00, 6642.50it/s]parsing log, completed traces ::  56%|█████▌    | 3855/6886 [00:00<00:00, 7401.86it/s]parsing log, completed traces ::  70%|██████▉   | 4789/6886 [00:00<00:00, 7867.20it/s]parsing log, completed traces ::  82%|████████▏ | 5614/6886 [00:00<00:00, 6318.62it/s]parsing log, completed traces ::  93%|█████████▎| 6404/6886 [00:00<00:00, 6716.65it/s]parsing log, completed traces :: 100%|██████████| 6886/6886 [00:00<00:00, 7245.95it/s]
+Traceback (most recent call last):
+  File "c:\Users\gianf\OneDrive\Documenti\Process Mining\Complexity\process-complexity\CC.py", line 137, in <module>
+    main(args.file)
+  File "c:\Users\gianf\OneDrive\Documenti\Process Mining\Complexity\process-complexity\CC.py", line 108, in main
+    log = carica_log(path_file)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\gianf\OneDrive\Documenti\Process Mining\Complexity\process-complexity\CC.py", line 30, in carica_log
+    from pm4py.objects.log import EventLog as Converter
+ImportError: cannot import name 'EventLog' from 'pm4py.objects.log' (c:\Users\gianf\miniconda3\envs\complexity\Lib\site-packages\pm4py\objects\log\__init__.py)

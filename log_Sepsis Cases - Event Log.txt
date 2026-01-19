@@ -1,0 +1,50 @@
+Starting Complexity --->
+Reading and preparing event log C:\Users\gianf\OneDrive\Documenti\Process Mining\Complexity\process-complexity\datasets\Sepsis Cases - Event Log.xes
+parsing log, completed traces ::   0%|          | 0/1050 [00:00<?, ?it/s]parsing log, completed traces ::  16%|#5        | 163/1050 [00:00<00:00, 1629.87it/s]parsing log, completed traces ::  31%|###1      | 330/1050 [00:00<00:00, 1643.82it/s]parsing log, completed traces ::  48%|####7     | 501/1050 [00:00<00:00, 1651.40it/s]parsing log, completed traces ::  66%|######5   | 689/1050 [00:00<00:00, 1727.24it/s]parsing log, completed traces ::  82%|########2 | 862/1050 [00:00<00:00, 1316.87it/s]parsing log, completed traces ::  98%|#########7| 1028/1050 [00:00<00:00, 1408.86it/s]parsing log, completed traces :: 100%|##########| 1050/1050 [00:00<00:00, 1481.73it/s]
+Starting performing measurements C:\Users\gianf\OneDrive\Documenti\Process Mining\Complexity\process-complexity\datasets\Sepsis Cases - Event Log.xes
+Selected measures: all
+Magnitude
+Magnitude: 15214
+Support
+Support: 1050
+Variety
+Variety: 16
+Level of detail
+Level of detail: 9.133333333333333
+Time Granularity
+Time granularity: 5.555238095238095 (seconds)
+Structure
+Structure: 0.55078125
+Affinity
+Affinity: 0.25580040954071165
+Trace Lenght
+Trace length: 3/14.48952380952381/185 (min/avg/max)
+Distinct Traces
+Distinct traces: 80.57142857142857%
+Deviation From Random
+Deviation from random: 0.7874054734233625
+Lempel Ziv
+Lempel-Ziv complexity: 3115
+Pentland's task complexity
+Pentland's Task complexity: 12956
+Pentland's process complexity
+Pentland's process complexity: 100000000.0
+---Entropy measures---
+Variant entropy: 40624.49329803771
+Normalized variant entropy: 0.6957588422064969
+Sequence entropy: 76528.6794749776
+Normalized equence entropy: 0.5223430410751398
+Sequence entropy with linear forgetting: 32140.010298754805
+Normalized sequence entropy with linear forgetting: 0.2193701869000244
+Sequence entropy with exponential forgetting (k=1): 43880.79159871679
+Normalized sequence entropy with exponential forgetting (k=1): 0.2995063587364335
+Time measurements:
+Defining predecessors: 1.400010660290718e-06 seconds
+Building prefix automaton: 3.300025127828121e-06 seconds
+Drawing the graph: 4.00003045797348e-06 seconds
+Calculating log complexity measures: 4.500034265220165e-06 seconds
+Calculating variant entropy: 4.800036549568176e-06 seconds
+Calculating sequence entropy: 5.200039595365524e-06 seconds
+Calculating sequence entropy with linear forgetting: 6.00004568696022e-06 seconds
+Calculating sequence entropy with exponential forgetting: 6.400048732757568e-06 seconds
+Total: 3.5600271075963974e-05

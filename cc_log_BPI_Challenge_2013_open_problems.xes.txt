@@ -1,0 +1,13 @@
+--- RISULTATI ---
+datasets\BPIC 13\BPI_Challenge_2013_open_problems.xes
+Fitness (Token-based): {'perc_fit_traces': 100.0, 'average_trace_fitness': 1.0, 'log_fitness': 1.0, 'percentage_of_fitting_traces': 100.0}
+Precision (Token-based): 0.7539344959591663
+Precision (ETM): 0.7539344959591663
+Generalization: 0.9455256156445283
+Generalization k-fold: 1.0
+Simplicity: 
+Arc Degree 0.6923076923076922,
+ Extende Cardoso 22,
+Cyclomatic 264
+
+FINE

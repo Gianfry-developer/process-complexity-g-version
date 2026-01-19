@@ -1,0 +1,12 @@
+Starting CC --->
+datasets\BPIC 20\PrepaidTravelCost.xes
+parsing log, completed traces ::   0%|          | 0/2099 [00:00<?, ?it/s]parsing log, completed traces ::  19%|█▉        | 409/2099 [00:00<00:00, 4057.20it/s]parsing log, completed traces ::  39%|███▉      | 815/2099 [00:00<00:00, 3794.88it/s]parsing log, completed traces ::  63%|██████▎   | 1325/2099 [00:00<00:00, 4100.49it/s]parsing log, completed traces ::  83%|████████▎ | 1735/2099 [00:00<00:00, 3438.94it/s]parsing log, completed traces :: 100%|██████████| 2099/2099 [00:00<00:00, 3822.92it/s]
+Traceback (most recent call last):
+  File "c:\Users\gianf\OneDrive\Documenti\Process Mining\Complexity\process-complexity\CC.py", line 137, in <module>
+    main(args.file)
+  File "c:\Users\gianf\OneDrive\Documenti\Process Mining\Complexity\process-complexity\CC.py", line 108, in main
+    log = carica_log(path_file)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\gianf\OneDrive\Documenti\Process Mining\Complexity\process-complexity\CC.py", line 30, in carica_log
+    from pm4py.objects.log import EventLog as Converter
+ImportError: cannot import name 'EventLog' from 'pm4py.objects.log' (c:\Users\gianf\miniconda3\envs\complexity\Lib\site-packages\pm4py\objects\log\__init__.py)

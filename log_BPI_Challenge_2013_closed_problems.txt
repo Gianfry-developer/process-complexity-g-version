@@ -1,0 +1,50 @@
+Starting Complexity --->
+Reading and preparing event log C:\Users\gianf\OneDrive\Documenti\Process Mining\Complexity\process-complexity\datasets\BPIC 13\BPI_Challenge_2013_closed_problems.xes
+parsing log, completed traces ::   0%|          | 0/1487 [00:00<?, ?it/s]parsing log, completed traces ::   1%|1         | 22/1487 [00:00<00:12, 115.14it/s]parsing log, completed traces ::  13%|#2        | 187/1487 [00:00<00:01, 768.50it/s]parsing log, completed traces ::  27%|##6       | 400/1487 [00:00<00:00, 1283.59it/s]parsing log, completed traces ::  41%|####1     | 612/1487 [00:00<00:00, 1574.17it/s]parsing log, completed traces ::  57%|#####6    | 842/1487 [00:00<00:00, 1813.07it/s]parsing log, completed traces ::  75%|#######5  | 1116/1487 [00:00<00:00, 2105.03it/s]parsing log, completed traces ::  92%|#########1| 1363/1487 [00:00<00:00, 2219.83it/s]parsing log, completed traces :: 100%|##########| 1487/1487 [00:00<00:00, 1780.62it/s]
+Starting performing measurements C:\Users\gianf\OneDrive\Documenti\Process Mining\Complexity\process-complexity\datasets\BPIC 13\BPI_Challenge_2013_closed_problems.xes
+Selected measures: all
+Magnitude
+Magnitude: 6660
+Support
+Support: 1487
+Variety
+Variety: 4
+Level of detail
+Level of detail: 2.3651647612642903
+Time Granularity
+Time granularity: 2502052.1218034993 (seconds)
+Structure
+Structure: 0.375
+Affinity
+Affinity: 0.5595553180439815
+Trace Lenght
+Trace length: 1/4.478816408876933/35 (min/avg/max)
+Distinct Traces
+Distinct traces: 12.30665770006725%
+Deviation From Random
+Deviation from random: 0.5448632268714624
+Lempel Ziv
+Lempel-Ziv complexity: 912
+Pentland's task complexity
+Pentland's Task complexity: 1715
+Pentland's process complexity
+Pentland's process complexity: 3.630780547701014
+---Entropy measures---
+Variant entropy: 3502.2644711314874
+Normalized variant entropy: 0.7053828282294897
+Sequence entropy: 18231.591303637917
+Normalized equence entropy: 0.31093992648055435
+Sequence entropy with linear forgetting: 16799.33035931098
+Normalized sequence entropy with linear forgetting: 0.2865127053283819
+Sequence entropy with exponential forgetting (k=1): 16908.868081803106
+Normalized sequence entropy with exponential forgetting (k=1): 0.288380872007379
+Time measurements:
+Defining predecessors: 1.500011421740055e-06 seconds
+Building prefix automaton: 3.400025889277458e-06 seconds
+Drawing the graph: 4.199973773211241e-06 seconds
+Calculating log complexity measures: 4.8999791033566e-06 seconds
+Calculating variant entropy: 5.299982149153948e-06 seconds
+Calculating sequence entropy: 5.799985956400633e-06 seconds
+Calculating sequence entropy with linear forgetting: 6.999995093792677e-06 seconds
+Calculating sequence entropy with exponential forgetting: 7.399998139590025e-06 seconds
+Total: 3.9499951526522636e-05
