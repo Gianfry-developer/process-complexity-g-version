@@ -17,28 +17,94 @@ from concurrent.futures import ProcessPoolExecutor
 import pandas as pd
 import pm4py
 
+def normalize_columns(df):
+    mapping = {
+        "case_id": "case:concept:name",
+        "Incident ID": "case:concept:name",
+        "SessionID": "case:concept:name",
+        "stay_id": "case:concept:name",
+        
+        "URL_FILE": "concept:name",
+        "activity":"concept:name",
+        "IncidentActivity_Type":"concept:name",
+        
+        "timestamp": "time:timestamp",
+        "timestamps": "time:timestamp",
+        "TIMESTAMP": "time:timestamp",
+        "DateStamp": "time:timestamp",
+    }
+    df = df.rename(columns=mapping)
+    return df
 
-def carica_log(file_path):
+
+
+
+def  carica_log(file_path):
     """Carica un file .xes e restituisce l'oggetto log."""
 
     import gc
     # log = xes_importer.apply(file_path)
     # log  = pm4py.read_xes(file_path)
-    log = pm4py.read_xes(file_path, return_legacy_log_object=False) #Ritorna solo la tabella e non la struttura ad albero
-    print(f"Tipo di oggetto caricato: {type(log)}")
-    # log = pm4py.convert_to_dataframe(log)
-    log = pm4py.format_dataframe(log, case_id='case:concept:name', activity_key='concept:name',
-                                 timestamp_key='time:timestamp')
 
-    # log = pd.read_csv(file_path, sep = ";", encoding =  "latin1")
-    # print(log.columns)
-    # log.rename(columns={'TIMESTAMP': 'time:timestamp', 'SessionID': 'case:concept:name', "URL_FILE":"concept:name"}, inplace= True)
+    file_path_csv = file_path.replace("xes", "csv")
+    
+    log = None
 
-    # Riduzione del log mantenendo solo gli attributi necessari per il calcolo delle metriche
-    log = log[['case:concept:name', 'concept:name', 'time:timestamp']]
+    if os.path.exists(file_path_csv):
+        print("carico da csv")
 
-    # log["time:timestamp"] = pd.to_datetime(log["time:timestamp"].apply(lambda x : x if "." in x else x + ".000"), infer_datetime_format = True )
-    # log[['case:concept:name', 'concept:name']] = log[['case:concept:name', 'concept:name']].astype(str)
+
+        # log = pd.read_csv(file_path_csv, sep = ";", encoding =  "latin1")
+        
+        encodings_to_try = ['utf-8', 'ISO-8859-1', 'cp1252', 'latin1']
+        for encoding in encodings_to_try:
+            try:
+                print(f"Tentativo lettura con encoding='{encoding}'...")
+                # engine='python' e sep=None rilevano il separatore automaticamente
+                log_csv = pd.read_csv(file_path_csv, sep=None, engine='python', encoding=encoding)
+                
+                print(f"Successo! File letto con encoding: {encoding}")
+                break  # Interrompe il ciclo se la lettura ha successo
+                
+            except (UnicodeDecodeError, pd.errors.ParserError):
+                # Se fallisce, continua col prossimo encoding nel ciclo
+                continue
+
+        # Se dopo tutti i tentativi log_csv è ancora vuoto, solleva un errore
+        if log_csv is None:
+            raise ValueError(f"Impossibile leggere il file {file_path_csv}. Controlla che non sia corrotto.")
+        
+        
+        
+        
+        log = log_csv
+        
+        # print(log.columns)
+        log = normalize_columns(log)
+
+        # Riduzione del log mantenendo solo gli attributi necessari per il calcolo delle metriche
+        log = log[['case:concept:name', 'concept:name', 'time:timestamp']]
+
+        log["time:timestamp"] = pd.to_datetime(log["time:timestamp"].apply(lambda x : x if "." in x else x + ".000"), infer_datetime_format = True )
+        log[['case:concept:name', 'concept:name']] = log[['case:concept:name', 'concept:name']].astype(str)
+
+
+    else:
+        log = pm4py.read_xes(file_path, return_legacy_log_object=False) #Ritorna solo la tabella e non la struttura ad albero
+        print(f"Tipo di oggetto caricato: {type(log)}")
+        # log = pm4py.convert_to_dataframe(log)
+        log = pm4py.format_dataframe(log, case_id='case:concept:name', activity_key='concept:name',
+                                    timestamp_key='time:timestamp')
+
+        # log = pd.read_csv(file_path, sep = ";", encoding =  "latin1")
+        # print(log.columns)
+        # log.rename(columns={'TIMESTAMP': 'time:timestamp', 'SessionID': 'case:concept:name', "URL_FILE":"concept:name"}, inplace= True)
+
+        # Riduzione del log mantenendo solo gli attributi necessari per il calcolo delle metriche
+        log = log[['case:concept:name', 'concept:name', 'time:timestamp']]
+
+        # log["time:timestamp"] = pd.to_datetime(log["time:timestamp"].apply(lambda x : x if "." in x else x + ".000"), infer_datetime_format = True )
+        # log[['case:concept:name', 'concept:name']] = log[['case:concept:name', 'concept:name']].astype(str)
 
     gc.collect()
     return log

@@ -36,11 +36,12 @@ if __name__ == "__main__":
             # wait_for_memory(0.6, check_interval=10)
             log_path = "cc_log_" + os.path.basename(elem) + ".txt"
 
-            with open(log_path, "r", encoding="utf-8") as f:
-                lines = f.readlines()
-                if any(["FINE" in line for line in lines]):
-                    print(f"Skipping {elem} as it is already processed.")
-                    continue
+            if os.path.exists(log_path):
+                with open(log_path, "r", encoding="utf-8") as f:
+                    lines = f.readlines()
+                    if any(["FINE" in line for line in lines]):
+                        print(f"Skipping {elem} as it is already processed.")
+                        continue
 
 
             sys.stdout = Tee(log_path)

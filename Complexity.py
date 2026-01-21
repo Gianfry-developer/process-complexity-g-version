@@ -155,6 +155,25 @@ class Graph:
 #2. Read the event log
 
 # Functions
+def normalize_columns(df):
+    mapping = {
+        "case_id": "case:concept:name",
+        "Incident ID": "case:concept:name",
+        "SessionID": "case:concept:name",
+        "stay_id": "case:concept:name",
+        
+        "URL_FILE": "concept:name",
+        "activity":"concept:name",
+        "IncidentActivity_Type":"concept:name",
+        
+        "timestamp": "time:timestamp",
+        "timestamps": "time:timestamp",
+        "TIMESTAMP": "time:timestamp",
+        "DateStamp": "time:timestamp",
+    }
+    df = df.rename(columns=mapping)
+    return df
+
 
 def extract_base_filename(filename):
     base_filename = ".".join(os.path.basename(filename).split('.')[0:-1])
@@ -172,40 +191,83 @@ def generate_pm4py_log(filename=None, verbose=False):
         from pm4py.objects.log.importer.xes import importer as xes_importer
         pm4py_log = xes_importer.apply(input_file)
     elif (filename.split(".")[-1]=="csv"):
+        print("csv file detected")
         # subprocess.call(["head", filename])
-        print(f"--- First 10 lines of {filename} ---")
-        try:
-            with open(filename, 'r', encoding='utf-8') as f:
-                for i in range(10):
-                    line = f.readline()
-                    if not line:
-                        break
-                    print(line.strip())
-            print("------------------------------------")
-        except Exception as e:
-            print(f"Could not display the head of the file: {e}")
-        i_h = input("Does the file have a header? [y/N]:") or "n"
-        h = 0 if i_h != "n" else None
-        i_d = input("What is the delimiter? [,]:") or ","
-        i_c = input("What is the column number of case ID? [0]:")
-        i_c = 0 if i_c == "" else int(i_c)
-        i_a = input("What is the column number of activity name? [1]:")
-        i_a = 1 if i_a == "" else int(i_a)
-        i_t = input("What is the column number of timestamp? [2]:")
-        i_t = 2 if i_t == "" else int(i_t)
+        # print(f"--- First 10 lines of {filename} ---")
+        # try:
+        #     with open(filename, 'r', encoding='utf-8') as f:
+        #         for i in range(10):
+        #             line = f.readline()
+        #             if not line:
+        #                 break
+        #             print(line.strip())
+        #     print("------------------------------------")
+        # except Exception as e:
+        #     print(f"Could not display the head of the file: {e}")
+
+        # i_h = input("Does the file have a header? [y/N]:") or "n"
+        # h = 0 if i_h != "n" else None
+        # i_d = input("What is the delimiter? [,]:") or ","
+        # i_c = input("What is the column number of case ID? [0]:")
+        # i_c = 0 if i_c == "" else int(i_c)
+        # i_a = input("What is the column number of activity name? [1]:")
+        # i_a = 1 if i_a == "" else int(i_a)
+        # i_t = input("What is the column number of timestamp? [2]:")
+        # i_t = 2 if i_t == "" else int(i_t)
+
+        # For automation, set default values
+
+
+
 
         from pm4py.objects.conversion.log import converter as log_converter
+        
         from pm4py.objects.log.util import dataframe_utils
 
-        log_csv = pd.read_csv(filename, sep=i_d, header=h)
-        log_csv.rename(columns={log_csv.columns[i_c]:'case', log_csv.columns[i_a]:'concept:name', log_csv.columns[i_t]:'time:timestamp'}, inplace=True)
-        for col in log_csv.columns:
-            if isinstance(col, int):
-                log_csv.rename(columns={col:'column'+str(col)}, inplace=True)
-        log_csv = dataframe_utils.convert_timestamp_columns_in_df(log_csv)
-        log_csv = log_csv.sort_values('time:timestamp')
-        log_csv["time:timestamp"] = pd.to_datetime(log_csv["time:timestamp"], format="%Y-%m-%d %H:%M:%S", errors='coerce')
-        parameters = {log_converter.Variants.TO_EVENT_LOG.value.Parameters.CASE_ID_KEY: 'case'}    
+        
+
+        log_csv = None
+        encodings_to_try = ['utf-8', 'ISO-8859-1', 'cp1252', 'latin1']
+        for encoding in encodings_to_try:
+            try:
+                print(f"Tentativo lettura con encoding='{encoding}'...")
+                # engine='python' e sep=None rilevano il separatore automaticamente
+                log_csv = pd.read_csv(filename, sep=None, engine='python', encoding=encoding)
+                
+                print(f"Successo! File letto con encoding: {encoding}")
+                break  # Interrompe il ciclo se la lettura ha successo
+                
+            except (UnicodeDecodeError, pd.errors.ParserError):
+                # Se fallisce, continua col prossimo encoding nel ciclo
+                continue
+
+        # Se dopo tutti i tentativi log_csv è ancora vuoto, solleva un errore
+        if log_csv is None:
+            raise ValueError(f"Impossibile leggere il file {filename}. Controlla che non sia corrotto.")
+
+        # log_csv = pd.read_csv(filename, sep=None, engine='python')#, sep=i_d, header=h)
+
+        
+        
+        
+        
+        
+        log_csv = normalize_columns(log_csv)
+        #log_csv.rename(columns={log_csv.columns[i_c]:'case', log_csv.columns[i_a]:'concept:name', log_csv.columns[i_t]:'time:timestamp'}, inplace=True)
+        
+        log = log_csv[['case:concept:name', 'concept:name', 'time:timestamp']]
+
+        log["time:timestamp"] = pd.to_datetime(log["time:timestamp"].apply(lambda x : x if "." in x else x + ".000"), infer_datetime_format = True )
+        log[['case:concept:name', 'concept:name']] = log[['case:concept:name', 'concept:name']].astype(str)
+        gc.collect()
+
+        # for col in log_csv.columns:
+        #     if isinstance(col, int):
+        #         log_csv.rename(columns={col:'column'+str(col)}, inplace=True)
+        # log_csv = dataframe_utils.convert_timestamp_columns_in_df(log_csv)
+        # log_csv = log_csv.sort_values('time:timestamp')
+        # log_csv["time:timestamp"] = pd.to_datetime(log_csv["time:timestamp"], format="%Y-%m-%d %H:%M:%S", errors='coerce')
+        parameters = {log_converter.Variants.TO_EVENT_LOG.value.Parameters.CASE_ID_KEY: 'case:concept:name'}    
         if(verbose):
             print(log_csv)
         pm4py_log = log_converter.apply(log_csv, parameters=parameters, variant=log_converter.Variants.TO_EVENT_LOG)

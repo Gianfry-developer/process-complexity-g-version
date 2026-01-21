@@ -83,7 +83,11 @@ if __name__ == "__main__":
                          
                          print("Reading and preparing event log", elem)
                          base_filename = extract_base_filename(str(elem))
-                         pm4py_log = generate_pm4py_log(str(elem), verbose=False)
+                         file_path_csv = str(elem).replace("xes", "csv")
+                         if os.path.exists(file_path_csv):
+                              pm4py_log = generate_pm4py_log(file_path_csv, verbose=False)
+                         else:
+                              pm4py_log = pm4py.read_xes(str(elem), verbose=False, return_legacy_log_object=False)
                          
                          gc.collect()
                          # This log is a list of lists of Event objects defined here
