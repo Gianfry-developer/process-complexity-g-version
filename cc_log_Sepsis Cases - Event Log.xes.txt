@@ -1,12 +1,27 @@
-Starting CC --->
-datasets\Sepsis Cases - Event Log.xes
-parsing log, completed traces ::   0%|          | 0/1050 [00:00<?, ?it/s]parsing log, completed traces ::  26%|██▋       | 276/1050 [00:00<00:00, 2758.59it/s]parsing log, completed traces ::  57%|█████▋    | 596/1050 [00:00<00:00, 3009.23it/s]parsing log, completed traces ::  85%|████████▌ | 897/1050 [00:00<00:00, 2312.29it/s]parsing log, completed traces :: 100%|██████████| 1050/1050 [00:00<00:00, 2488.53it/s]
-Traceback (most recent call last):
-  File "c:\Users\gianf\OneDrive\Documenti\Process Mining\Complexity\process-complexity\CC.py", line 137, in <module>
-    main(args.file)
-  File "c:\Users\gianf\OneDrive\Documenti\Process Mining\Complexity\process-complexity\CC.py", line 108, in main
-    log = carica_log(path_file)
-          ^^^^^^^^^^^^^^^^^^^^^
-  File "c:\Users\gianf\OneDrive\Documenti\Process Mining\Complexity\process-complexity\CC.py", line 30, in carica_log
-    from pm4py.objects.log import EventLog as Converter
-ImportError: cannot import name 'EventLog' from 'pm4py.objects.log' (c:\Users\gianf\miniconda3\envs\complexity\Lib\site-packages\pm4py\objects\log\__init__.py)
+Conformance Checking Report
+File: datasets/Sepsis Cases - Event Log.xes
+Fitness: {'perc_fit_traces': 100.0, 'average_trace_fitness': 1.0, 'log_fitness': 1.0, 'percentage_of_fitting_traces': 100.0}
+Precision: 0.17925101879847505
+Generalization: 0.9266596408851777
+Generalization k-fold: 0.9999598151379423
+
+--- METRICHE DI SEMPLICITÀ ---
+
+
+=== RISULTATI FINALI ===
+File: datasets/Sepsis Cases - Event Log.xes
+
+CONFORMANCE:
+  Fitness (Token-based):      {'perc_fit_traces': 100.0, 'average_trace_fitness': 1.0, 'log_fitness': 1.0, 'percentage_of_fitting_traces': 100.0}
+  Precision (Token-based):    0.17925101879847505
+
+GENERALIZZAZIONE:
+  Generalization (Training):  0.9266596408851777
+  Generalization (5-fold):  0.9999598151379423
+
+SEMPLICITÀ:
+  Arc Degree: 0.4545
+  Extended Cardoso: 5.0000
+  Cyclomatic: 20.0000
+
+=== FINE ===

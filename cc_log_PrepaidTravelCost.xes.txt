@@ -1,12 +1,27 @@
-Starting CC --->
-datasets\BPIC 20\PrepaidTravelCost.xes
-parsing log, completed traces ::   0%|          | 0/2099 [00:00<?, ?it/s]parsing log, completed traces ::  19%|█▉        | 409/2099 [00:00<00:00, 4057.20it/s]parsing log, completed traces ::  39%|███▉      | 815/2099 [00:00<00:00, 3794.88it/s]parsing log, completed traces ::  63%|██████▎   | 1325/2099 [00:00<00:00, 4100.49it/s]parsing log, completed traces ::  83%|████████▎ | 1735/2099 [00:00<00:00, 3438.94it/s]parsing log, completed traces :: 100%|██████████| 2099/2099 [00:00<00:00, 3822.92it/s]
-Traceback (most recent call last):
-  File "c:\Users\gianf\OneDrive\Documenti\Process Mining\Complexity\process-complexity\CC.py", line 137, in <module>
-    main(args.file)
-  File "c:\Users\gianf\OneDrive\Documenti\Process Mining\Complexity\process-complexity\CC.py", line 108, in main
-    log = carica_log(path_file)
-          ^^^^^^^^^^^^^^^^^^^^^
-  File "c:\Users\gianf\OneDrive\Documenti\Process Mining\Complexity\process-complexity\CC.py", line 30, in carica_log
-    from pm4py.objects.log import EventLog as Converter
-ImportError: cannot import name 'EventLog' from 'pm4py.objects.log' (c:\Users\gianf\miniconda3\envs\complexity\Lib\site-packages\pm4py\objects\log\__init__.py)
+Conformance Checking Report
+File: datasets/BPIC 20/PrepaidTravelCost.xes
+Fitness: {'perc_fit_traces': 100.0, 'average_trace_fitness': 1.0, 'log_fitness': 1.0, 'percentage_of_fitting_traces': 100.0}
+Precision: 0.109501562931129
+Generalization: 0.8904211520153033
+Generalization k-fold: 1.0
+
+--- METRICHE DI SEMPLICITÀ ---
+
+
+=== RISULTATI FINALI ===
+File: datasets/BPIC 20/PrepaidTravelCost.xes
+
+CONFORMANCE:
+  Fitness (Token-based):      {'perc_fit_traces': 100.0, 'average_trace_fitness': 1.0, 'log_fitness': 1.0, 'percentage_of_fitting_traces': 100.0}
+  Precision (Token-based):    0.109501562931129
+
+GENERALIZZAZIONE:
+  Generalization (Training):  0.8904211520153033
+  Generalization (5-fold):  1.0
+
+SEMPLICITÀ:
+  Arc Degree: 0.4043
+  Extended Cardoso: 5.0000
+  Cyclomatic: 33.0000
+
+=== FINE ===

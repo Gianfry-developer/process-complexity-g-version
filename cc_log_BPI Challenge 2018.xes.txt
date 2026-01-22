@@ -1,2 +1,13 @@
 Starting CC --->
 datasets\BPIC 18\BPI Challenge 2018.xes
+
+=== ANALISI CONFORMANCE CHECKING ===
+Input: datasets/BPIC 18/BPI Challenge 2018.xes
+
+Caricamento XES: datasets/BPIC 18/BPI Challenge 2018.xes
+Log caricato: 2514266 eventi, 43809 tracce
+
+Modello
+<class 'pandas.core.frame.DataFrame'> 2514266
+
+--- METRICHE DI CONFORMANCE (Training Set) ---

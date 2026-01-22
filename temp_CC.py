@@ -30,7 +30,7 @@ class Tee(object):
 if __name__ == "__main__":
      r_d = Path("datasets")
      scripts = list(r_d.rglob("*.xes"))
-     scripts.sort(reverse=True)
+     #scripts.sort(reverse=True)
      for elem in scripts:
             print(elem, "CC")
             # wait_for_memory(0.6, check_interval=10)
@@ -45,6 +45,8 @@ if __name__ == "__main__":
 
 
             sys.stdout = Tee(log_path)
+            gc.collect()
+            print("Started", elem)
             CC.main(str(elem), log_path)
             sys.stdout.log.close()
             sys.stdout = sys.__stdout__

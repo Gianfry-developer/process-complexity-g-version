@@ -1,0 +1,23 @@
+datasets/BPIC 16/BPI2016_Clicks_Logged_In.xes
+carico da csv
+datasets/BPIC 16/BPI2016_Clicks_Logged_In.xes
+carico da csv
+datasets/BPIC 16/BPI2016_Clicks_Logged_In.xes
+carico da csv
+Tentativo lettura con encoding='utf-8'...
+Tentativo lettura con encoding='ISO-8859-1'...
+Successo! File letto con encoding: ISO-8859-1
+datasets/BPIC 16/BPI2016_Clicks_Logged_In.xes
+carico da csv
+Tentativo lettura con encoding='utf-8'...
+Tentativo lettura con encoding='ISO-8859-1'...
+Successo! File letto con encoding: ISO-8859-1
+Modello
+fitness e precisison Token-based 
+datasets/BPIC 16/BPI2016_Clicks_Logged_In.xes
+carico da csv
+Tentativo lettura con encoding='utf-8'...
+Tentativo lettura con encoding='ISO-8859-1'...
+Successo! File letto con encoding: ISO-8859-1
+Modello
+fitness e precisison Token-based 

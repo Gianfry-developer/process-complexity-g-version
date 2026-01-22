@@ -1,2 +1,27 @@
-Starting CC --->
-datasets\BPIC 20\RequestForPayment.xes
+Conformance Checking Report
+File: datasets/BPIC 20/RequestForPayment.xes
+Fitness: {'perc_fit_traces': 100.0, 'average_trace_fitness': 1.0, 'log_fitness': 1.0, 'percentage_of_fitting_traces': 100.0}
+Precision: 0.17777389990902903
+Generalization: 0.8350845701975759
+Generalization k-fold: 0.9999792970187489
+
+--- METRICHE DI SEMPLICITÀ ---
+
+
+=== RISULTATI FINALI ===
+File: datasets/BPIC 20/RequestForPayment.xes
+
+CONFORMANCE:
+  Fitness (Token-based):      {'perc_fit_traces': 100.0, 'average_trace_fitness': 1.0, 'log_fitness': 1.0, 'percentage_of_fitting_traces': 100.0}
+  Precision (Token-based):    0.17777389990902903
+
+GENERALIZZAZIONE:
+  Generalization (Training):  0.8350845701975759
+  Generalization (5-fold):  0.9999792970187489
+
+SEMPLICITÀ:
+  Arc Degree: 0.4648
+  Extended Cardoso: 8.0000
+  Cyclomatic: 26.0000
+
+=== FINE ===

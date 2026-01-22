@@ -1,2 +1,27 @@
-Starting CC --->
-datasets\BPIC 20\PermitLog.xes
+Conformance Checking Report
+File: datasets/BPIC 20/PermitLog.xes
+Fitness: {'perc_fit_traces': 100.0, 'average_trace_fitness': 1.0, 'log_fitness': 1.0, 'percentage_of_fitting_traces': 100.0}
+Precision: 0.07015826277150428
+Generalization: 0.8652393738255396
+Generalization k-fold: 1.0
+
+--- METRICHE DI SEMPLICITÀ ---
+
+
+=== RISULTATI FINALI ===
+File: datasets/BPIC 20/PermitLog.xes
+
+CONFORMANCE:
+  Fitness (Token-based):      {'perc_fit_traces': 100.0, 'average_trace_fitness': 1.0, 'log_fitness': 1.0, 'percentage_of_fitting_traces': 100.0}
+  Precision (Token-based):    0.07015826277150428
+
+GENERALIZZAZIONE:
+  Generalization (Training):  0.8652393738255396
+  Generalization (5-fold):  1.0
+
+SEMPLICITÀ:
+  Arc Degree: 0.3750
+  Extended Cardoso: 5.0000
+  Cyclomatic: 55.0000
+
+=== FINE ===
