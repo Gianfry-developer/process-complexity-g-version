@@ -21,3 +21,15 @@ Tentativo lettura con encoding='ISO-8859-1'...
 Successo! File letto con encoding: ISO-8859-1
 Modello
 fitness e precisison Token-based 
+Started datasets\BPIC 16\BPI2016_Clicks_Logged_In.xes
+
+=== ANALISI CONFORMANCE CHECKING ===
+Input: datasets\BPIC 16\BPI2016_Clicks_Logged_In.xes
+
+Caricamento CSV: datasets\BPIC 16\BPI2016_Clicks_Logged_In.csv
+Log caricato: 7153430 eventi, 660083 tracce
+
+Modello
+<class 'pandas.core.frame.DataFrame'> 7153430
+
+--- METRICHE DI CONFORMANCE (Training Set) ---

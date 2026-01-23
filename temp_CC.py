@@ -34,7 +34,7 @@ if __name__ == "__main__":
      for elem in scripts:
             print(elem, "CC")
             # wait_for_memory(0.6, check_interval=10)
-            log_path = "cc_log_" + os.path.basename(elem) + ".txt"
+            log_path = os.path.join("CC","cc_log_" + os.path.basename(elem) + ".txt")
 
             if os.path.exists(log_path):
                 with open(log_path, "r", encoding="utf-8") as f:
